@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ===============================PROFILE================================== -->
+<div class="container">
+
+  <!-- Sidebar Profile -->
+  <aside class="profile">
+    <div class="profile-top">
+      <img src="https://res.cloudinary.com/dhoigmq1n/image/upload/v1774542107/LMLMLMLM_dv808h.png" class="profile-img">
+      <h2>AMHAL AYYOUB</h2>
+      <span class="badge">Front-end Developer</span>
+    </div>
+<br>
+    <div class="profile-info">
+
+ <a href="javascript:void(0)" class="info-item" onclick="showSection('contact', document.querySelector('.nav-btn-contact'))">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="https://wa.me/212656823214" class="info-item" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+  <a href="https://github.com/Mr-Ayyoub" target="_blank" class="info-item">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <!-- <a href="https://linkedin.com/in/yourname" target="_blank" class="info-item">
+    <i class="fa-brands fa-linkedin"></i>
+  </a> -->
+
+</div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <header class="navbar">
+        <button class="nav-btn" onclick="showSection('about')">About</button>
+        <button class="nav-btn" onclick="showSection('resume')">Resume</button>
+        <button class="nav-btn" onclick="showSection('portfolio')">Portfolio</button>
+        <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+    </header>
+<!-- ==================================ABOUT========================================= -->
+    <section id="about" class="section active">
+      <h1 class="contact-title">About Me</h1>
+      <div class="title-line"></div>
+      <p>I am a creative designer from Casablanca, Morocco, specializing in front-end development and print media design. I enjoy turning complex problems into simple, beautiful, and intuitive  <br><br>
+
+My job is to build your website so that it is both functional and easy to use while also being visually appealing. Moreover, I add a personal touch to your product, ensuring that it is eye-catching and user-friendly. My goal is to communicate your message and identity in the most creative way possible. </p>
+
+      <h2>What I'm Doing</h2>
+      <div class="services">
+        <div class="card"><h3>Web Design</h3> <hr> <p> I design custom front-end UI layouts based on your vision, ready to be handed over to a developer for implementation.</p> </div>
+        <div class="card"> <H3>Front-End Development</H3> <hr> <p>I design and develop modern, responsive front-end interfaces tailored to showcase your product or service in a unique and engaging way.</p></div>
+        <div class="card"> <h3> Graphic Design </h3> <hr> <p> I am a passionate Graphic Designer with a keen eye for creativity and detail. I specialize in creating visually appealing designs that communicate ideas effectively and leave a lasting impression.</p> </div>
+        <div class="card"> <h3> Brand Identity </h3> <hr> <p> I create unique and memorable brand identities by designing logos, choosing color palettes, selecting typography, and developing a consistent visual style that reflects your vision and connects with your audience. </p> </div>
+      </div>
+    </section>
+<!-- ===================================RESUME======================================== -->
+    <section id="resume" class="section">
+      <h1 class="contact-title">Resume</h1>
+    <div class="title-line"></div>
+        <div class="resume-container">
+    
+
+    <div id="education-section" class="block"></div>
+    <div id="experience-section" class="block"></div>
+    <div id="skills-section" class="block"></div>
+
+  </div>
+    </section>
+
+<!-- =====================================PORTFOLIO========================================================== -->
+
+    <section id="portfolio" class="section portfolio-section">
+      <h1 class="contact-title">Portfolio</h1>
+      <div class="title-line"></div>
+    
+      
+        <section class="portfolio-section">
+    <div class="container">
+      <div class="portfolio-header">
+
+        <div class="filters filter-buttons">
+          <button class="filter-btn active" data-category="all">ALL</button>
+          <button class="filter-btn" data-category="web-design">Web Design</button>
+          <button class="filter-btn" data-category="front-end">Front End</button>
+          <button class="filter-btn" data-category="graphic-design">Graphic Design</button>
+          <button class="filter-btn" data-category="branding">Branding</button>
+        </div>
+      </div>
+
+      <div id="portfolioGrid" class="portfolio-grid">
+        المشاريع ستظهر هنا 
+      </div>
+    </div>
+  </section>
+
+
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button id="closeModal" class="close-modal">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+  <img src="" alt="Full Image">
+</div>
+
+
+  </section>
+    
+
+<!-- ================================CONTACT======================================================== -->
+    <!-- <section id="contact" class="section">
+      <h1>Contact</h1>
+      <input placeholder="Your name">
+      <textarea placeholder="Your message"></textarea>
+      <button class="primary">Send</button>
+    </section> -->
+
+     <section id="contact" class="section ">
+      <h1 class="contact-title">Contact</h1>
+          <div class="title-line"></div>
+    <div class="contact-container">
+
+
+      <form id="contactForm" class="contact-form">
+        <div class="input-group">
+          <input type="text" id="fullName" name="full_name" placeholder="Full name" required>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" name="user_email" placeholder="Email address" required>
+        </div>
+
+        <div class="input-group">
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn" id="sendBtn">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Send Message</span>
+        </button>
+
+        <p id="statusMessage" class="status-message"></p>
+      </form>
+    </div>
+  </section>
+
+
+  </main>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
