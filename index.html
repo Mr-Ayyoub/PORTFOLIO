@@ -15,32 +15,48 @@
 
   <!-- Sidebar Profile -->
   <aside class="profile">
-    <div class="profile-top">
-      <img src="https://res.cloudinary.com/dhoigmq1n/image/upload/v1774542107/LMLMLMLM_dv808h.png" class="profile-img">
-      <h2>AMHAL AYYOUB</h2>
-      <span class="badge">Front-end Developer</span>
+  <div class="profile-top">
+    <img src="https://res.cloudinary.com/dhoigmq1n/image/upload/v1774542107/LMLMLMLM_dv808h.png" class="profile-img" alt="Profile Image">
+    <h2>AMHAL AYYOUB</h2>
+    <span class="badge">Front-end Developer</span>
+  </div>
+
+  <!-- زر لإظهار/إخفاء التفاصيل على الهاتف -->
+  <button class="toggle-btn-profile" id="toggleProfileBtn">▼</button>
+
+  <!-- تفاصيل البروفايل -->
+  <div class="profile-details" id="profileDetails">
+    <div class="info">
+      <span>Email</span>
+      <p>amhalayoub91@gmail.com</p>
     </div>
-<br>
+    <div class="info">
+      <span>Phone</span>
+      <p>+212 656823214</p>
+    </div>
+    <div class="info">
+      <span>Birthday</span>
+      <p>Nov 01, 2004</p>
+    </div>
+    <div class="info">
+      <span>Location</span>
+      <p>Mediouna, Casablanca, Morocco</p>
+    </div>
+
+    <!-- أيقونات التواصل -->
     <div class="profile-info">
-
- <a href="javascript:void(0)" class="info-item" onclick="showSection('contact', document.querySelector('.nav-btn-contact'))">
-  <i class="fa-solid fa-envelope"></i>
-</a>
-
-<a href="https://wa.me/212656823214" class="info-item" target="_blank">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-  <a href="https://github.com/Mr-Ayyoub" target="_blank" class="info-item">
-    <i class="fa-brands fa-github"></i>
-  </a>
-
-  <!-- <a href="https://linkedin.com/in/yourname" target="_blank" class="info-item">
-    <i class="fa-brands fa-linkedin"></i>
-  </a> -->
-
-</div>
-  </aside>
+      <a href="mailto:amhalayoub91@gmail.com" class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/212656823214" class="info-item" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://github.com/Mr-Ayyoub" class="info-item" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+</aside>
 
   <!-- Main Content -->
   <main class="content">

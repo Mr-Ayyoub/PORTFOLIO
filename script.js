@@ -32,6 +32,14 @@ function showSection(sectionId, btn) {
   });
 }
 
+// profile ========================================
+const toggleProfileBtn = document.getElementById("toggleProfileBtn");
+const profile = document.querySelector(".profile");
+
+toggleProfileBtn.addEventListener("click", () => {
+  profile.classList.toggle("active");
+});
+
 
 // resume =========================
 
